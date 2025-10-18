@@ -12,14 +12,18 @@ class BoxPad:
 def get_edges(boxtype: str | None = None):
     match boxtype:
         case "square":
-            return ["┌", "┐", "└", "┘"]
+            return ["┌", "┐", "└", "┘", "│", "─", "├", "┤", "┬", "┴", "┼"]
         case "rounded":
-            return ["╭", "╮", "╰", "╯"]
+            return ["╮", "╭", "╯", "╰", "│", "─", "├", "┤", "┬", "┴", "┼"]
         case "double":
-            return ["╔", "╗", "╚", "╝"]
+            return ["╗", "╔", "╝", "╚", "║", "═","╠", "╣", "╦", "╩", "╬"]
         case "bold":
-            return ["┏", "┓", "┗", "┛"]
+            return ["┓", "┏", "┛", "┗", "┃", "━", "┣", "┫", "┳", "┻", "╋"]
+        case "classic":
+            return ["+", "+", "+", "+", "┇", "-", "+", "+", "+", "+", "+"]
         case "empty":
-            return [" ", " ", " ", " "]
+            return [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+        case "boldEdges":
+            return ["┓", "┏", "┛", "┗", "│", "─", "├", "┤", "┬", "┴", "┼"]
         case _:
             raise ValueError(f"Invalid box type: {boxtype}")

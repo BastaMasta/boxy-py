@@ -1,0 +1,3 @@
+[submodule "vendor/boxy-cli"]
+	path = vendor/boxy-cli
+	url = https://github.com/BastaMasta/boxy-cli.git

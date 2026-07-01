@@ -11,6 +11,13 @@ classifiers = [
     "Programming Language :: Python :: Implementation :: PyPy",
 ]
 dynamic = ["version"]
+optional-dependedncies = {docs = [
+    "mkdocs",
+    "mkdocs-material",
+    "mkdocstrings[python]",
+]}
+
+
 
 [tool.maturin]
 module-name = "boxy_py"

@@ -5,11 +5,7 @@ repo_url: https://github.com/BastaMasta/boxy-py
 repo_name: BastaMasta/boxy-py
 
 theme:
-  name: material
-  palette:
-    scheme: slate
-    primary: cyan
-    accent: cyan
+  name: readthedocs
   features:
     - navigation.instant
     - navigation.top
@@ -20,7 +16,7 @@ plugins:
   - mkdocstrings:
       handlers:
         python:
-          paths: [python]
+          paths: [.]
           options:
             docstring_style: google
             show_source: false

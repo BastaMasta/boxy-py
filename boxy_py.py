@@ -1,3 +1,5 @@
+# pyright: basic
+
 """Python bindings for boxy-cli — styled terminal boxes in Python."""
 
 

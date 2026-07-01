@@ -13,7 +13,6 @@ classifiers = [
 dynamic = ["version"]
 optional-dependedncies = {docs = [
     "mkdocs",
-    "mkdocs-material",
     "mkdocstrings[python]",
 ]}
 
